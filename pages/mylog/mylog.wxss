@@ -1,0 +1,16 @@
+.log-list{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+.log-item{
+    margin: 5px;
+}
+
+/*这个是上面log-item有效的前提*/
+.log-mod{
+    display: flex;
+    flex-direction: column;
+}

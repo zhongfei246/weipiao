@@ -1,0 +1,38 @@
+.mod{
+    font-size: 20px;
+    margin-top: 100px;
+    background-color: #F2f2f2;
+}
+
+.userinfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userinfo-avatar{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.userinfo-nickname{
+
+    margin-top: 10px;
+    color: red;
+}
+
+.information text {
+    font-size: 10px;
+    color: #666;
+}
+
+.information {
+    flex: 1;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    line-height: 15px;
+    overflow: hidden;
+}

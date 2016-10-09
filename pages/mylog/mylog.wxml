@@ -1,0 +1,7 @@
+<view class="log-list">
+    <block wx:for="{{logs}}">
+       <view class="log-mod">
+            <text class="log-item">{{index+1}}.{{item}}</text>
+       </view>
+    </block>
+</view>

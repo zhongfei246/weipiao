@@ -1,0 +1,68 @@
+<!--<swiper indicator-dots="{{true}}"
+  autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}">
+  <block wx:for="{{bannerList}}">
+    <swiper-item>
+      <image src="{{item}}" style="width:100%"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+ <scroll-view scroll-y="true" style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+      <block wx:for="{{listData}}">
+        <view  class="listMode">
+            <view>
+              <image src="{{item.image}}" style="width:60px;height:100px"/>
+            </view>
+            <view class="title-mod">
+                <view>{{item.title}}</view>
+                <view>{{item.subTitle}}</view>
+                <view>{{item.actor}}</view>
+            </view>
+            <view class="right-mod">
+                <view style="align-item:flex-start;width:30px">{{item.score}}</view>
+                <button class="goupiao" style="width:60px;height:30px;background-color:green">{{item.action}}</button>
+            </view>
+        </view>
+     </block>
+</scroll-view>-->
+
+
+<view class="container">
+  <view>
+    <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical = "{{vertical}}"
+            autoplay="{{autoplay}}" interval = "{{interval}}" duration="{{duration}}" bindchange="{{swiperchange}}">
+            <block wx:for="{{bannerList}}">
+                <swiper-item>
+                  <image src="{{item}}" class="slide-image"/>
+                </swiper-item>
+            </block>
+    </swiper>
+  </view>
+
+  <view class="text">
+    <view class= "line_flag"></view>
+    <text>正在上映</text>
+  </view>
+
+  <block wx:for="{{listData}}">
+    <view class="flex item">
+        <view>
+          <image src="{{item.image}}"/>
+        </view>
+
+        <view class="flex_auto item_middle">
+            <view><text class = "title">{{item.title}}</text></view>
+            <view><text class="sub_title">{{item.sub_title}}</text></view>
+            <view><text class="actor">{{item.actor}}</text></view>
+        </view>
+
+        <view class="item_right">
+            <view><text class="score">{{item.score}}</text></view>
+            <view><text class="action">{{item.action}}</text></view>
+        </view>
+
+    </view>
+  </block>
+
+</view>
+

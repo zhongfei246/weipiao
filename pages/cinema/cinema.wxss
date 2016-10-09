@@ -1,0 +1,34 @@
+
+.container {
+    display: flex;
+    background-color: #F2F2F2;
+}
+.cellMode{
+    border: 1px solid #dfdfdf;
+    margin-top: 10px;
+}
+
+.price text{
+    top: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    color: red;
+}
+
+.price {
+    padding-top: 5px;
+}
+
+.item_middle {
+    flex: 1;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+
+.item_middle text {
+    font-size: 14px;
+    color: #666;
+    margin: 2px 0px;
+}

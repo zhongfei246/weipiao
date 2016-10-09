@@ -1,0 +1,16 @@
+<view class="mod">
+
+    <view class="userinfo" bindtap="lookLog">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+
+    <view class="information">
+        <view><text>李中飞</text></view>
+        <view><text>QQ:1440182323</text></view>
+    </view>
+
+</view>
+
+
+

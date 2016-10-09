@@ -1,0 +1,18 @@
+<view class=".container">
+        <block wx:for="{{cinemaList}}">
+
+             <view class="flex cellMode">
+
+                <view class="item_middle">
+                    <view><text>{{item.title}}</text></view>
+                    <view><text>{{item.subTitle}}</text></view>
+                    <view><text>{{item.tag}}</text></view>
+                </view>
+
+                <view class="price">
+                    <view ><text>{{item.price}}</text></view>
+                </view>
+                
+            </view>
+        </block>
+</view>

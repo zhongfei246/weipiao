@@ -1,0 +1,8 @@
+/**很重要**/
+.flex {
+    display: flex;
+}
+
+.flex_auto {
+    flex: 1;
+}
